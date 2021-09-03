@@ -11,7 +11,7 @@ if(isset($_POST['submit'])){
 	// $headers="From: ".$lastname;
 	$headers = "MIME-Version: 1.0" . "\r\n";
 	$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-	$headers .= 'From:UIC Snowmass Symposium <www@uic.edu>' . "\r\n";
+	$headers .= 'From: Portfolio Contact Form' . "\r\n";
 
 	// if(mail($to, $subject, $message, $headers)){
 	// 	echo "<h1> success";
@@ -20,6 +20,6 @@ if(isset($_POST['submit'])){
 	// 	echo "error";
 	// }
 	mail($to, $subject, $message, $headers);
-	header("Location: index_new1.html#contact");
+	header("Location: index.html#footer");
 }
 ?>
